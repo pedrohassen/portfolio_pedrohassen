@@ -18,10 +18,10 @@ dist-ssr
 !.env.example
 .vercel
 
-# Editor directories and files
+# Editor / tooling directories
 .vscode/*
 !.vscode/extensions.json
-.claude/settings.local.json
+.claude/
 .idea
 .DS_Store
 *.suo
