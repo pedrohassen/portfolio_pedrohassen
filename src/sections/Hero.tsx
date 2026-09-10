@@ -9,7 +9,7 @@ export function Hero() {
 
   return (
     <section id="topo" className="border-b border-line">
-      <Container className="py-20 sm:py-28 md:py-36">
+      <Container className="py-16 sm:py-24 md:py-28">
         <h1 className="text-4xl leading-[1.05] font-medium text-balance sm:text-6xl md:text-7xl">
           {perfil.nome}
         </h1>
