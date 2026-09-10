@@ -12,7 +12,7 @@ export function SiteFooter() {
           © {ano} {conteudo.footer.direitos}
         </span>
         <a
-          href={perfil.links.github}
+          href={perfil.links.repositorio}
           target="_blank"
           rel="noreferrer"
           className="transition-colors hover:text-ink"
