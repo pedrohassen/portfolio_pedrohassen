@@ -3,6 +3,8 @@
 export type LinksExternos = {
   github: string
   linkedin: string
+  /** Repositório deste portfólio. */
+  repositorio: string
 }
 
 export type Perfil = {

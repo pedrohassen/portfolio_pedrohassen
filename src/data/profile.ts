@@ -9,6 +9,7 @@ export const perfil: Perfil = {
   links: {
     github: 'https://github.com/pedrohassen',
     linkedin: 'https://www.linkedin.com/in/pedrohassen',
+    repositorio: 'https://github.com/pedrohassen/portfolio_pedrohassen',
   },
   curriculoPdf: '/curriculo/pedro_hasse_niemczewski_curriculo.pdf',
 }
