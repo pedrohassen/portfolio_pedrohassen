@@ -26,11 +26,11 @@ export const conteudo = {
     marcador: '01 — Sobre',
     /** A idade é montada no componente: `calculateAge(perfil.nascimento)` + esta unidade. */
     idadeUnidade: 'anos',
-    /** Rascunho derivado do currículo — Pedro revisa. Cada item é um parágrafo. */
+    /** Cada item é um parágrafo. */
     bio: [
       'Sou desenvolvedor de software com visão estratégica e background em Gestão de Negócios.',
       'Trabalho fullstack de ponta a ponta com JavaScript, TypeScript e React, com vivência corporativa em C#/.NET e integrações de sistemas envolvendo IA e Python.',
-      'Já liderei tecnologia como Diretor na Senatec Jr. e cofundei a startup Coffe-e.',
+      'Na Senatec Jr., empresa júnior de tecnologia, coordenei projetos e o time de desenvolvimento, com reuniões diretas com clientes para entender as dores do negócio e transformá-las em produto. Também cofundei o Coffe‑e, um projeto nascido de um Startup Weekend.',
     ],
   },
 

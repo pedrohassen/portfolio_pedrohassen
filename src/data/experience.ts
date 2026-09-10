@@ -3,14 +3,14 @@ import type { Experiencia, Formacao } from '../types'
 /** Ordem: mais recente primeiro. */
 export const experiencia: Experiencia[] = [
   {
-    cargo: 'Diretor de Tecnologia (estágio)',
-    empresa: 'Senatec Junior',
+    cargo: 'Diretor de Tecnologia',
+    empresa: 'Senatec Junior (empresa júnior)',
     local: 'Pelotas, RS',
     inicio: '2025-01',
     fim: '2026-04',
     atividades: [
-      'Liderança técnica e gestão ágil do time de desenvolvimento, definindo diretrizes arquiteturais e impulsionando a adoção de novas tecnologias.',
-      'Atuação direta como Product Owner junto aos clientes: reuniões de alinhamento, levantamento de requisitos e priorização de backlog.',
+      'Liderança do time de desenvolvimento e responsabilidade pelas entregas aos clientes.',
+      'Atuação como Product Owner: reuniões com clientes para entender as dores do negócio, levantamento de requisitos e priorização do backlog.',
     ],
   },
   {
@@ -25,25 +25,25 @@ export const experiencia: Experiencia[] = [
     ],
   },
   {
-    cargo: 'Desenvolvedor e Coordenador de Projetos (estágio)',
-    empresa: 'Senatec Junior',
+    cargo: 'Desenvolvedor e Coordenador de Projetos',
+    empresa: 'Senatec Junior (empresa júnior)',
     local: 'Pelotas, RS',
     inicio: '2024-06',
     fim: '2024-12',
     atividades: [
-      'Coordenação do ciclo de vida dos projetos: prazos, alocação de tarefas e alinhamento com as necessidades dos clientes.',
-      'Desenvolvimento Fullstack com JavaScript/TypeScript e gestão de bancos de dados.',
+      'Desenvolvimento fullstack (JavaScript/TypeScript) e modelagem de banco de dados.',
+      'Coordenação de projetos: prazos, distribuição de tarefas no time e acompanhamento das entregas.',
     ],
   },
   {
-    cargo: 'Empreendedor e Desenvolvedor',
-    empresa: 'Coffe-e',
+    cargo: 'Cofundador e Desenvolvedor',
+    empresa: 'Coffe‑e',
     local: 'Pelotas, RS',
     inicio: '2024-01',
     fim: '2025-03',
     atividades: [
-      'Idealização e estruturação tecnológica da startup do zero, unindo visão de negócio ao desenvolvimento da plataforma.',
-      'Validação prática de funcionalidades e estruturação do modelo do produto de ponta a ponta.',
+      'Projeto nascido de um Startup Weekend, tocado junto de outros desenvolvedores.',
+      'Estruturação técnica e desenvolvimento da plataforma, da modelagem à validação de funcionalidades com usuários.',
     ],
   },
 ]
