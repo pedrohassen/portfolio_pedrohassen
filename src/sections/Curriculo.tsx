@@ -1,7 +1,8 @@
+import { Button } from '../components/Button'
 import { Section } from '../components/Section'
 import { conteudo } from '../content/pt-BR'
+import { perfil } from '../data/profile'
 
-// Conteúdo real entra na próxima branch (botões "Ver" e "Baixar" do PDF).
 export function Curriculo() {
   return (
     <Section
@@ -9,7 +10,22 @@ export function Curriculo() {
       marcador={conteudo.curriculo.marcador}
       titulo={conteudo.curriculo.titulo}
     >
-      <p className="text-muted">Em breve.</p>
+      <p className="mb-6 max-w-[var(--container-measure)] text-muted">
+        {conteudo.curriculo.texto}
+      </p>
+      <div className="flex flex-wrap gap-3">
+        <Button
+          href={perfil.curriculoPdf}
+          target="_blank"
+          rel="noreferrer"
+          variant="solid"
+        >
+          {conteudo.curriculo.ver}
+        </Button>
+        <Button href={perfil.curriculoPdf} download>
+          {conteudo.curriculo.baixar}
+        </Button>
+      </div>
     </Section>
   )
 }
