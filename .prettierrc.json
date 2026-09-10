@@ -2,5 +2,11 @@
   "semi": false,
   "singleQuote": true,
   "plugins": ["prettier-plugin-tailwindcss"],
-  "tailwindStylesheet": "./src/styles/index.css"
+  "tailwindStylesheet": "./src/styles/index.css",
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": { "printWidth": 400 }
+    }
+  ]
 }
