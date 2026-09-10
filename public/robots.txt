@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfoliopedrohassen.vercel.app/sitemap.xml
