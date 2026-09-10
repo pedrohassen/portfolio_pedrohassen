@@ -1,0 +1,43 @@
+/*
+ * Tokens do tema (Tailwind v4, CSS-first).
+ * As cores semânticas são CSS custom properties em :root / .dark, e o bloco
+ * `@theme inline` as expõe como utilitários (bg-paper, text-ink, border-line,
+ * text-accent, font-display, font-sans...).
+ * Trocar a identidade visual = mexer só aqui.
+ */
+
+:root {
+  --paper: #faf9f6;
+  --ink: #1b1a17;
+  --muted: #6f6b63;
+  --line: #e4e1d9;
+  --accent: #7c2f2f;
+  --accent-contrast: #ffffff;
+}
+
+.dark {
+  --paper: #141310;
+  --ink: #eae7df;
+  --muted: #9a958a;
+  --line: #2c2a25;
+  --accent: #cf7a6b;
+  --accent-contrast: #141310;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-contrast: var(--accent-contrast);
+
+  --font-sans:
+    'Inter Tight Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  --font-display:
+    'Fraunces Variable', ui-serif, Georgia, Cambria, 'Times New Roman', serif;
+
+  /* largura de leitura da coluna principal */
+  --container-measure: 68ch;
+}

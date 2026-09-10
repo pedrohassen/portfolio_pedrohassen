@@ -1,0 +1,4 @@
+dist
+node_modules
+public/curriculo
+package-lock.json
