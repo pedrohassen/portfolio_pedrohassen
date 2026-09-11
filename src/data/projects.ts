@@ -46,32 +46,6 @@ export const projetos: Projeto[] = [
     ordem: 3,
   },
   {
-    slug: 'sajic-2024',
-    titulo: 'SAJIC 2024',
-    resumo:
-      'Site da Semana Acadêmica do UniSenac 2024 — programação, palestrantes e inscrições.',
-    descricao:
-      'Site do evento acadêmico do UniSenac, com seções de visão geral, programação, palestrantes e inscrição via Sympla. React + Vite + Tailwind CSS, roteamento com React Router e carrossel com Embla. Publicado na Vercel.',
-    stack: ['React', 'Vite', 'Tailwind CSS', 'React Router'],
-    repoUrl: 'https://github.com/pedrohassen/SAJIC_2024',
-    demoUrl: 'https://sajic-2024.vercel.app',
-    destaque: false,
-    ordem: 4,
-  },
-  {
-    slug: 'delivery-app',
-    titulo: 'iBirit@ — App de Delivery de Bebidas',
-    resumo:
-      'App de delivery de bebidas com carrinho, pedidos e perfis de cliente, vendedor e administrador.',
-    descricao:
-      'Projeto em grupo da formação em Desenvolvimento Web (Trybe). Back-end em Express + Sequelize/MySQL com autenticação JWT e Socket.io pra status de pedido em tempo real; front-end em React com Material UI. Três perfis de acesso (cliente, vendedor, administrador), cada um com seu fluxo próprio.',
-    stack: ['React', 'Express', 'Sequelize', 'MySQL', 'Socket.io', 'JWT'],
-    repoUrl: 'https://github.com/pedrohassen/delivery-app',
-    demoUrl: 'https://delivery-app-lovat.vercel.app',
-    destaque: false,
-    ordem: 5,
-  },
-  {
     slug: 'amigo',
     titulo: 'AmiGo! — Marketplace de Petshop',
     resumo:
@@ -91,6 +65,32 @@ export const projetos: Projeto[] = [
     repoUrl:
       'https://gitlab.com/senac-projeto-integrador/pedro-filipe-bernardo-brian-gabriel-eduarda/amigo_front',
     demoUrl: 'https://pedro-filipe-bernardo-brian-gabriel.vercel.app',
+    destaque: false,
+    ordem: 4,
+  },
+  {
+    slug: 'delivery-app',
+    titulo: 'iBirit@ — App de Delivery de Bebidas',
+    resumo:
+      'App de delivery de bebidas com carrinho, pedidos e perfis de cliente, vendedor e administrador.',
+    descricao:
+      'Projeto em grupo da formação em Desenvolvimento Web (Trybe). Back-end em Express + Sequelize/MySQL com autenticação JWT e Socket.io pra status de pedido em tempo real; front-end em React com Material UI. Três perfis de acesso (cliente, vendedor, administrador), cada um com seu fluxo próprio.',
+    stack: ['React', 'Express', 'Sequelize', 'MySQL', 'Socket.io', 'JWT'],
+    repoUrl: 'https://github.com/pedrohassen/delivery-app',
+    demoUrl: 'https://delivery-app-lovat.vercel.app',
+    destaque: false,
+    ordem: 5,
+  },
+  {
+    slug: 'sajic-2024',
+    titulo: 'SAJIC 2024',
+    resumo:
+      'Site da Semana Acadêmica do UniSenac 2024 — programação, palestrantes e inscrições.',
+    descricao:
+      'Site do evento acadêmico do UniSenac, com seções de visão geral, programação, palestrantes e inscrição via Sympla. React + Vite + Tailwind CSS, roteamento com React Router e carrossel com Embla. Publicado na Vercel.',
+    stack: ['React', 'Vite', 'Tailwind CSS', 'React Router'],
+    repoUrl: 'https://github.com/pedrohassen/SAJIC_2024',
+    demoUrl: 'https://sajic-2024.vercel.app',
     destaque: false,
     ordem: 6,
   },
