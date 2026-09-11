@@ -65,7 +65,7 @@ export const projetos: Projeto[] = [
     repoUrl:
       'https://gitlab.com/senac-projeto-integrador/pedro-filipe-bernardo-brian-gabriel-eduarda/amigo_front',
     demoUrl: 'https://pedro-filipe-bernardo-brian-gabriel.vercel.app',
-    destaque: false,
+    destaque: true,
     ordem: 4,
   },
   {
