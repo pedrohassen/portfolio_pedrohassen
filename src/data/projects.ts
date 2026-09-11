@@ -58,4 +58,17 @@ export const projetos: Projeto[] = [
     destaque: false,
     ordem: 4,
   },
+  {
+    slug: 'delivery-app',
+    titulo: 'iBirit@ — App de Delivery de Bebidas',
+    resumo:
+      'App de delivery de bebidas com carrinho, pedidos e perfis de cliente, vendedor e administrador.',
+    descricao:
+      'Projeto em grupo da formação em Desenvolvimento Web (Trybe). Back-end em Express + Sequelize/MySQL com autenticação JWT e Socket.io pra status de pedido em tempo real; front-end em React com Material UI. Três perfis de acesso (cliente, vendedor, administrador), cada um com seu fluxo próprio.',
+    stack: ['React', 'Express', 'Sequelize', 'MySQL', 'Socket.io', 'JWT'],
+    repoUrl: 'https://github.com/pedrohassen/delivery-app',
+    demoUrl: 'https://delivery-app-lovat.vercel.app',
+    destaque: false,
+    ordem: 5,
+  },
 ]
