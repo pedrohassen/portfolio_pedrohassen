@@ -22,7 +22,10 @@ export function Curriculo() {
         >
           {conteudo.curriculo.ver}
         </Button>
-        <Button href={perfil.curriculoPdf} download>
+        <Button
+          href={perfil.curriculoPdf}
+          download={perfil.curriculoNomeDownload}
+        >
           {conteudo.curriculo.baixar}
         </Button>
       </div>
