@@ -6,7 +6,6 @@ import { ThemeToggle } from './ThemeToggle'
 
 const navItems = [
   { href: '#sobre', label: conteudo.nav.sobre },
-  { href: '#destaques', label: conteudo.nav.destaques },
   { href: '#projetos', label: conteudo.nav.projetos },
   { href: '#experiencia', label: conteudo.nav.experiencia },
   { href: '#curriculo', label: conteudo.nav.curriculo },

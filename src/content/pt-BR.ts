@@ -15,7 +15,6 @@ export const conteudo = {
 
   nav: {
     sobre: 'Sobre',
-    destaques: 'Destaques',
     projetos: 'Projetos',
     experiencia: 'Experiência',
     curriculo: 'Currículo',
@@ -34,28 +33,25 @@ export const conteudo = {
     ],
   },
 
-  destaques: {
-    marcador: '02 — Destaques',
-    titulo: 'Projetos em destaque',
-    vazio: 'Em breve.',
-  },
-
   projetos: {
-    marcador: '03 — Projetos',
+    marcador: '02 — Projetos',
     titulo: 'Projetos',
     vazio: 'Em breve.',
+    destaque: 'Destaque',
     verNoGithub: 'Ver no GitHub',
     verDemo: 'Ver demo',
+    verMais: 'Ver mais projetos',
+    verMenos: 'Ver menos',
   },
 
   experiencia: {
-    marcador: '04 — Experiência',
+    marcador: '03 — Experiência',
     titulo: 'Experiência',
     formacaoTitulo: 'Formação',
   },
 
   curriculo: {
-    marcador: '05 — Currículo',
+    marcador: '04 — Currículo',
     titulo: 'Currículo',
     texto: 'Versão completa e atualizada em PDF.',
     ver: 'Ver PDF',
@@ -63,7 +59,7 @@ export const conteudo = {
   },
 
   contato: {
-    marcador: '06 — Contato',
+    marcador: '05 — Contato',
     titulo: 'Contato',
     texto: 'Aberto a oportunidades. Melhor forma de falar comigo:',
     email: 'E-mail',

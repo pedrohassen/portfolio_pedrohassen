@@ -4,7 +4,6 @@ import { SiteHeader } from './components/SiteHeader'
 import { SkipLink } from './components/SkipLink'
 import { Contato } from './sections/Contato'
 import { Curriculo } from './sections/Curriculo'
-import { Destaques } from './sections/Destaques'
 import { Experiencia } from './sections/Experiencia'
 import { Hero } from './sections/Hero'
 import { Projetos } from './sections/Projetos'
@@ -18,7 +17,6 @@ export default function App() {
       <main id="conteudo">
         <Hero />
         <Sobre />
-        <Destaques />
         <Projetos />
         <Experiencia />
         <Curriculo />

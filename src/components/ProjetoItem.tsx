@@ -2,12 +2,19 @@ import { conteudo } from '../content/pt-BR'
 import type { Projeto } from '../types'
 import { ExternalLink } from './ExternalLink'
 
-/** Uma linha da lista de projetos (usada em Destaques e Projetos). */
+/** Uma linha da lista de projetos (seção Projetos). */
 export function ProjetoItem({ projeto }: { projeto: Projeto }) {
   const temLinks = Boolean(projeto.repoUrl || projeto.demoUrl)
 
   return (
     <article className="border-t border-line py-6 first:border-t-0 first:pt-0">
+      {projeto.destaque ? (
+        <p className="mb-2 flex items-center gap-2 font-sans text-xs tracking-[0.15em] text-accent uppercase">
+          <span aria-hidden="true" className="h-px w-6 bg-accent" />
+          {conteudo.projetos.destaque}
+        </p>
+      ) : null}
+
       <h3 className="text-xl">{projeto.titulo}</h3>
 
       <p className="mt-2 max-w-[var(--container-measure)] text-muted">
