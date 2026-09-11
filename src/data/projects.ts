@@ -46,6 +46,19 @@ export const projetos: Projeto[] = [
     ordem: 3,
   },
   {
+    slug: 'catalogo-b2b',
+    titulo: 'Catálogo B2B — Site Institucional',
+    resumo:
+      'Site institucional B2B com catálogo filtrável e calculadora de orçamento interativa — SPA estática, sem backend.',
+    descricao:
+      'Projeto conceito de portfólio: catálogo de produtos fictício com filtro por categoria e busca por nome, calculadora de orçamento (adicionar produtos, ajustar quantidade, total em tempo real) e localização com mapa embutido — tudo client-side, sem servidor. Empresa e produtos são fictícios, propositalmente genéricos (não fixados em nenhum ramo). Dark mode, acessibilidade (contraste AA, navegação por teclado, alvo de toque 44px) e responsivo desde o primeiro commit.',
+    stack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
+    repoUrl: 'https://github.com/pedrohassen/catalogo-b2b',
+    demoUrl: 'https://catalogo-b2b-livid.vercel.app',
+    destaque: true,
+    ordem: 4,
+  },
+  {
     slug: 'amigo',
     titulo: 'AmiGo! — Marketplace de Petshop',
     resumo:
@@ -66,7 +79,7 @@ export const projetos: Projeto[] = [
       'https://gitlab.com/senac-projeto-integrador/pedro-filipe-bernardo-brian-gabriel-eduarda/amigo_front',
     demoUrl: 'https://pedro-filipe-bernardo-brian-gabriel.vercel.app',
     destaque: true,
-    ordem: 4,
+    ordem: 5,
   },
   {
     slug: 'delivery-app',
