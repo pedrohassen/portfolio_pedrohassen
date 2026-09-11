@@ -12,4 +12,5 @@ export const perfil: Perfil = {
     repositorio: 'https://github.com/pedrohassen/portfolio_pedrohassen',
   },
   curriculoPdf: '/curriculo/pedro_hasse_niemczewski_curriculo.pdf',
+  curriculoNomeDownload: 'Pedro Hasse Niemczewski - Curriculo.pdf',
 }
