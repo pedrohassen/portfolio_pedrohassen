@@ -7,6 +7,10 @@
  */
 
 :root {
+  /* Reativo à classe .dark — evita que o navegador tematize controles nativos
+     (scrollbar, form fields) pela preferência do SO, ignorando o toggle do site. */
+  color-scheme: light;
+
   --paper: #faf9f6;
   --ink: #1b1a17;
   --muted: #6f6b63;
@@ -16,6 +20,8 @@
 }
 
 .dark {
+  color-scheme: dark;
+
   --paper: #141310;
   --ink: #eae7df;
   --muted: #9a958a;
