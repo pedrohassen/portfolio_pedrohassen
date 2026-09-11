@@ -71,4 +71,27 @@ export const projetos: Projeto[] = [
     destaque: false,
     ordem: 5,
   },
+  {
+    slug: 'amigo',
+    titulo: 'AmiGo! — Marketplace de Petshop',
+    resumo:
+      'Marketplace que conecta tutores de pets a petshops parceiros — produtos, serviços e pedidos.',
+    descricao:
+      'Projeto em grupo da formação em Análise e Desenvolvimento de Sistemas (UniSENAC). Dois portais: cliente (cadastro de pets, busca por categoria, carrinho e pedidos) e petshop parceiro (dashboard, cadastro de produtos e serviços como banho, adestramento e consultas). Front-end em React + TypeScript + Vite + Tailwind CSS; API em Express + Prisma/PostgreSQL com autenticação JWT.',
+    stack: [
+      'React',
+      'TypeScript',
+      'Vite',
+      'Tailwind CSS',
+      'Express',
+      'Prisma',
+      'PostgreSQL',
+      'JWT',
+    ],
+    repoUrl:
+      'https://gitlab.com/senac-projeto-integrador/pedro-filipe-bernardo-brian-gabriel-eduarda/amigo_front',
+    demoUrl: 'https://pedro-filipe-bernardo-brian-gabriel.vercel.app',
+    destaque: false,
+    ordem: 6,
+  },
 ]
