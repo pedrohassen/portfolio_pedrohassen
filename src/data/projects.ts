@@ -33,6 +33,19 @@ export const projetos: Projeto[] = [
     ordem: 2,
   },
   {
+    slug: 'no-azul',
+    titulo: 'No Azul — Controle Financeiro Pessoal',
+    resumo:
+      'Controle pessoal de receitas e despesas — PWA offline-first, sem backend, dados só no dispositivo.',
+    descricao:
+      'Projeto conceito construído pra uso pessoal real: sem backend, todos os dados ficam no localStorage do dispositivo, com exportar/importar (mesclar ou substituir) pra backup manual entre aparelhos. PWA instalável, 100% funcional offline via service worker. Dark mode reativo à preferência do sistema, acessível (contraste AA, alvos de toque, navegação por teclado).',
+    stack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'PWA'],
+    repoUrl: 'https://github.com/pedrohassen/no-azul',
+    demoUrl: 'https://no-azul-mu.vercel.app',
+    destaque: true,
+    ordem: 3,
+  },
+  {
     slug: 'sajic-2024',
     titulo: 'SAJIC 2024',
     resumo:
@@ -43,6 +56,6 @@ export const projetos: Projeto[] = [
     repoUrl: 'https://github.com/pedrohassen/SAJIC_2024',
     demoUrl: 'https://sajic-2024.vercel.app',
     destaque: false,
-    ordem: 3,
+    ordem: 4,
   },
 ]
