@@ -39,6 +39,7 @@ export const conteudo = {
     vazio: 'Em breve.',
     destaque: 'Destaque',
     verNoGithub: 'Ver no GitHub',
+    verApiNoGithub: 'Ver API no GitHub',
     verDemo: 'Ver demo',
     verMais: 'Ver mais projetos',
     verMenos: 'Ver menos',
