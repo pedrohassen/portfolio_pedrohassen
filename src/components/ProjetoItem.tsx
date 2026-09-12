@@ -11,45 +11,59 @@ export function ProjetoItem({ projeto }: { projeto: Projeto }) {
 
   return (
     <article className="border-t border-line py-6 first:border-t-0 first:pt-0">
-      {projeto.destaque ? (
-        <p className="mb-2 flex items-center gap-2 font-sans text-xs tracking-[0.15em] text-accent uppercase">
-          <span aria-hidden="true" className="h-px w-6 bg-accent" />
-          {conteudo.projetos.destaque}
-        </p>
-      ) : null}
-
-      <h3 className="text-xl">{projeto.titulo}</h3>
-
-      <p className="mt-2 max-w-[var(--container-measure)] text-muted">
-        {projeto.resumo}
-      </p>
-
-      {projeto.stack.length > 0 ? (
-        <p className="mt-3 font-sans text-xs tracking-wide text-muted uppercase">
-          {projeto.stack.join(' · ')}
-        </p>
-      ) : null}
-
-      {temLinks ? (
-        <p className="mt-3 flex flex-wrap gap-x-6 gap-y-1 font-sans text-sm">
-          {projeto.repoUrl ? (
-            <ExternalLink href={projeto.repoUrl}>
-              {conteudo.projetos.verNoRepo} {plataformaRepo(projeto.repoUrl)}
-            </ExternalLink>
+      <div className="flex flex-col-reverse gap-6 md:flex-row md:items-start md:justify-between">
+        <div className="min-w-0 flex-1">
+          {projeto.destaque ? (
+            <p className="mb-2 flex items-center gap-2 font-sans text-xs tracking-[0.15em] text-accent uppercase">
+              <span aria-hidden="true" className="h-px w-6 bg-accent" />
+              {conteudo.projetos.destaque}
+            </p>
           ) : null}
-          {projeto.repoApiUrl ? (
-            <ExternalLink href={projeto.repoApiUrl}>
-              {conteudo.projetos.verApiNoRepo}{' '}
-              {plataformaRepo(projeto.repoApiUrl)}
-            </ExternalLink>
+
+          <h3 className="text-xl">{projeto.titulo}</h3>
+
+          <p className="mt-2 max-w-[var(--container-measure)] text-muted">
+            {projeto.resumo}
+          </p>
+
+          {projeto.stack.length > 0 ? (
+            <p className="mt-3 font-sans text-xs tracking-wide text-muted uppercase">
+              {projeto.stack.join(' · ')}
+            </p>
           ) : null}
-          {projeto.demoUrl ? (
-            <ExternalLink href={projeto.demoUrl}>
-              {conteudo.projetos.verDemo}
-            </ExternalLink>
+
+          {temLinks ? (
+            <p className="mt-3 flex flex-wrap gap-x-6 gap-y-1 font-sans text-sm">
+              {projeto.repoUrl ? (
+                <ExternalLink href={projeto.repoUrl}>
+                  {conteudo.projetos.verNoRepo}{' '}
+                  {plataformaRepo(projeto.repoUrl)}
+                </ExternalLink>
+              ) : null}
+              {projeto.repoApiUrl ? (
+                <ExternalLink href={projeto.repoApiUrl}>
+                  {conteudo.projetos.verApiNoRepo}{' '}
+                  {plataformaRepo(projeto.repoApiUrl)}
+                </ExternalLink>
+              ) : null}
+              {projeto.demoUrl ? (
+                <ExternalLink href={projeto.demoUrl}>
+                  {conteudo.projetos.verDemo}
+                </ExternalLink>
+              ) : null}
+            </p>
           ) : null}
-        </p>
-      ) : null}
+        </div>
+
+        {projeto.imagem ? (
+          <img
+            src={projeto.imagem}
+            alt={projeto.imagemAlt ?? ''}
+            loading="lazy"
+            className="aspect-video w-full shrink-0 border border-line object-cover md:w-64"
+          />
+        ) : null}
+      </div>
     </article>
   )
 }
