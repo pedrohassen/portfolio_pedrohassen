@@ -39,6 +39,11 @@ export type Formacao = {
   conclusao: string
 }
 
+export type CategoriaHabilidade = {
+  categoria: string
+  itens: string[]
+}
+
 export type Projeto = {
   slug: string
   /** 1 linha, aparece na lista. */

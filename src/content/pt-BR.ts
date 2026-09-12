@@ -15,6 +15,7 @@ export const conteudo = {
 
   nav: {
     sobre: 'Sobre',
+    habilidades: 'Habilidades',
     projetos: 'Projetos',
     experiencia: 'Experiência',
     curriculo: 'Currículo',
@@ -25,6 +26,7 @@ export const conteudo = {
     marcador: '01 — Sobre',
     /** A idade é montada no componente: `calculateAge(perfil.nascimento)` + esta unidade. */
     idadeUnidade: 'anos',
+    disponivel: 'Aberto a oportunidades',
     /** Cada item é um parágrafo. */
     bio: [
       'Sou desenvolvedor de software com visão estratégica e background em Gestão de Negócios.',
@@ -33,8 +35,13 @@ export const conteudo = {
     ],
   },
 
+  habilidades: {
+    marcador: '02 — Habilidades',
+    titulo: 'Habilidades',
+  },
+
   projetos: {
-    marcador: '02 — Projetos',
+    marcador: '03 — Projetos',
     titulo: 'Projetos',
     vazio: 'Em breve.',
     destaque: 'Destaque',
@@ -47,13 +54,13 @@ export const conteudo = {
   },
 
   experiencia: {
-    marcador: '03 — Experiência',
+    marcador: '04 — Experiência',
     titulo: 'Experiência',
     formacaoTitulo: 'Formação',
   },
 
   curriculo: {
-    marcador: '04 — Currículo',
+    marcador: '05 — Currículo',
     titulo: 'Currículo',
     texto: 'Versão completa e atualizada em PDF.',
     ver: 'Ver PDF',
@@ -61,7 +68,7 @@ export const conteudo = {
   },
 
   contato: {
-    marcador: '05 — Contato',
+    marcador: '06 — Contato',
     titulo: 'Contato',
     texto: 'Aberto a oportunidades. Melhor forma de falar comigo:',
     email: 'E-mail',

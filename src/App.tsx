@@ -5,6 +5,7 @@ import { SkipLink } from './components/SkipLink'
 import { Contato } from './sections/Contato'
 import { Curriculo } from './sections/Curriculo'
 import { Experiencia } from './sections/Experiencia'
+import { Habilidades } from './sections/Habilidades'
 import { Hero } from './sections/Hero'
 import { Projetos } from './sections/Projetos'
 import { Sobre } from './sections/Sobre'
@@ -17,6 +18,7 @@ export default function App() {
       <main id="conteudo">
         <Hero />
         <Sobre />
+        <Habilidades />
         <Projetos />
         <Experiencia />
         <Curriculo />
