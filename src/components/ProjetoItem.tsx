@@ -4,7 +4,9 @@ import { ExternalLink } from './ExternalLink'
 
 /** Uma linha da lista de projetos (seção Projetos). */
 export function ProjetoItem({ projeto }: { projeto: Projeto }) {
-  const temLinks = Boolean(projeto.repoUrl || projeto.demoUrl)
+  const temLinks = Boolean(
+    projeto.repoUrl || projeto.repoApiUrl || projeto.demoUrl,
+  )
 
   return (
     <article className="border-t border-line py-6 first:border-t-0 first:pt-0">
@@ -32,6 +34,11 @@ export function ProjetoItem({ projeto }: { projeto: Projeto }) {
           {projeto.repoUrl ? (
             <ExternalLink href={projeto.repoUrl}>
               {conteudo.projetos.verNoGithub}
+            </ExternalLink>
+          ) : null}
+          {projeto.repoApiUrl ? (
+            <ExternalLink href={projeto.repoApiUrl}>
+              {conteudo.projetos.verApiNoGithub}
             </ExternalLink>
           ) : null}
           {projeto.demoUrl ? (

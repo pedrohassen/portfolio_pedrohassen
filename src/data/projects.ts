@@ -28,6 +28,7 @@ export const projetos: Projeto[] = [
       'SPA em Vue 3 + TypeScript (Composition API) e Vuetify que consome uma API ASP.NET Core. Login e registro com JWT, rotas protegidas por perfil (USER/ADMIN), gestão do perfil do usuário e CRUD de alunos com filtro e paginação na área de admin. Validação com Zod e testes com Vitest. Deploy na Vercel, com API no Render e banco no Supabase.',
     stack: ['Vue 3', 'TypeScript', 'Vuetify', 'Vite', 'Zod', 'Vitest'],
     repoUrl: 'https://github.com/pedrohassen/gerenciamento_alunos_front',
+    repoApiUrl: 'https://github.com/pedrohassen/gerenciamento_alunos_api',
     demoUrl: 'https://gerenciamento-alunos-front.vercel.app',
     destaque: true,
     ordem: 2,

@@ -48,6 +48,8 @@ export type Projeto = {
   descricao: string
   stack: string[]
   repoUrl?: string
+  /** Repo separado do backend, quando existir (ex.: front/API em repos distintos). */
+  repoApiUrl?: string
   demoUrl?: string
   /** Caminho em `/src/assets` ou `/public`. */
   imagem?: string
