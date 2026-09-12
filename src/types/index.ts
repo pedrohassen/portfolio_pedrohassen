@@ -58,6 +58,8 @@ export type Projeto = {
   demoUrl?: string
   /** Caminho em `/src/assets` ou `/public`. */
   imagem?: string
+  /** Texto alternativo da imagem — obrigatório quando `imagem` existe. */
+  imagemAlt?: string
   /** `true` = aparece na seção Destaques. */
   destaque: boolean
   /** Ordenação dentro da própria lista. */

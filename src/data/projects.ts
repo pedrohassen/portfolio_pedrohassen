@@ -16,8 +16,11 @@ export const projetos: Projeto[] = [
       'API Dados Abertos',
     ],
     repoUrl: 'https://github.com/pedrohassen/lupa_legis_tradutor_leis',
-    destaque: true,
-    ordem: 1,
+    imagem: '/projetos/lupa-legis.png',
+    imagemAlt:
+      'Resumo gerado por IA de um projeto de lei no Lupa Legis: explicação, objetivo, quem é impactado, efeito prático, termos técnicos e limitações.',
+    destaque: false,
+    ordem: 3,
   },
   {
     slug: 'learningloop',
@@ -30,8 +33,11 @@ export const projetos: Projeto[] = [
     repoUrl: 'https://github.com/pedrohassen/gerenciamento_alunos_front',
     repoApiUrl: 'https://github.com/pedrohassen/gerenciamento_alunos_api',
     demoUrl: 'https://gerenciamento-alunos-front.vercel.app',
+    imagem: '/projetos/learningloop.png',
+    imagemAlt:
+      'Área admin do LearningLoop: tabela de alunos com busca por nome e curso, e ações de editar/excluir.',
     destaque: true,
-    ordem: 2,
+    ordem: 1,
   },
   {
     slug: 'no-azul',
@@ -43,8 +49,11 @@ export const projetos: Projeto[] = [
     stack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'PWA'],
     repoUrl: 'https://github.com/pedrohassen/no-azul',
     demoUrl: 'https://no-azul-mu.vercel.app',
+    imagem: '/projetos/no-azul.png',
+    imagemAlt:
+      'Tela de resumo do No Azul no celular: saldo do mês, receitas e despesas, e despesas por categoria.',
     destaque: true,
-    ordem: 3,
+    ordem: 2,
   },
   {
     slug: 'catalogo-b2b',
@@ -56,8 +65,11 @@ export const projetos: Projeto[] = [
     stack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
     repoUrl: 'https://github.com/pedrohassen/catalogo-b2b',
     demoUrl: 'https://catalogo-b2b-livid.vercel.app',
+    imagem: '/projetos/catalogo-b2b.png',
+    imagemAlt:
+      'Fim do catálogo de produtos e a calculadora de orçamento do Catálogo B2B, com itens adicionados e o total calculado.',
     destaque: true,
-    ordem: 4,
+    ordem: 3,
   },
   {
     slug: 'amigo',
@@ -81,6 +93,25 @@ export const projetos: Projeto[] = [
     repoApiUrl:
       'https://gitlab.com/senac-projeto-integrador/pedro-filipe-bernardo-brian-gabriel-eduarda/amigo_api',
     demoUrl: 'https://pedro-filipe-bernardo-brian-gabriel.vercel.app',
+    imagem: '/projetos/amigo.png',
+    imagemAlt:
+      'Dashboard do portal petshop parceiro do AmiGo!, com pedidos em andamento, em entrega, concluídos e cancelados, e totais do mês.',
+    destaque: true,
+    ordem: 4,
+  },
+  {
+    slug: 'classificador-dino-cnn',
+    titulo: 'Classificador Dino — Reconhecimento de Dinossauros com CNN',
+    resumo:
+      'Identifica a espécie de um dinossauro em uma imagem, com API própria em Python e modelo treinado via transfer learning.',
+    descricao:
+      'Evoluído de uma atividade de curso (CNN + PyTorch) para uma arquitetura própria: backend em FastAPI (substituindo a implementação original em Node.js, que só chamava um script Python por fora) servindo um modelo de transfer learning (MobileNetV2) treinado com data augmentation e randomização de fundo pra reduzir o viés do dataset. 100% de acurácia no conjunto de teste (dataset é ilustração/render/arte gerada por IA, não foto real). Frontend em HTML/CSS/JS puro, sem framework. Deploy via Docker no Render.',
+    stack: ['Python', 'FastAPI', 'PyTorch', 'Torchvision', 'Docker'],
+    repoUrl: 'https://github.com/pedrohassen/classificador-dino-cnn',
+    demoUrl: 'https://classificador-dino-cnn.onrender.com',
+    imagem: '/projetos/classificador-dino-cnn.png',
+    imagemAlt:
+      'Antes e depois: imagem de um T-Rex enviada para classificação, e o resultado — Tyrannosaurus com 87% de confiança e o top 3 de previsões.',
     destaque: true,
     ordem: 5,
   },
@@ -94,8 +125,11 @@ export const projetos: Projeto[] = [
     stack: ['React', 'Express', 'Sequelize', 'MySQL', 'Socket.io', 'JWT'],
     repoUrl: 'https://github.com/pedrohassen/delivery-app',
     demoUrl: 'https://delivery-app-lovat.vercel.app',
+    imagem: '/projetos/delivery-app.png',
+    imagemAlt:
+      'Pedido do cliente no iBirit@: status "Pendente", item comprado (Heineken 600ml) e valor total.',
     destaque: false,
-    ordem: 5,
+    ordem: 1,
   },
   {
     slug: 'sajic-2024',
@@ -107,7 +141,10 @@ export const projetos: Projeto[] = [
     stack: ['React', 'Vite', 'Tailwind CSS', 'React Router'],
     repoUrl: 'https://github.com/pedrohassen/SAJIC_2024',
     demoUrl: 'https://sajic-2024.vercel.app',
+    imagem: '/projetos/sajic-2024.png',
+    imagemAlt:
+      'Carrossel de palestrantes de tecnologia confirmados no site do SAJIC 2024.',
     destaque: false,
-    ordem: 6,
+    ordem: 2,
   },
 ]
