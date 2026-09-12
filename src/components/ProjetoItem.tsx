@@ -1,4 +1,5 @@
 import { conteudo } from '../content/pt-BR'
+import { plataformaRepo } from '../lib/plataformaRepo'
 import type { Projeto } from '../types'
 import { ExternalLink } from './ExternalLink'
 
@@ -33,12 +34,13 @@ export function ProjetoItem({ projeto }: { projeto: Projeto }) {
         <p className="mt-3 flex flex-wrap gap-x-6 gap-y-1 font-sans text-sm">
           {projeto.repoUrl ? (
             <ExternalLink href={projeto.repoUrl}>
-              {conteudo.projetos.verNoGithub}
+              {conteudo.projetos.verNoRepo} {plataformaRepo(projeto.repoUrl)}
             </ExternalLink>
           ) : null}
           {projeto.repoApiUrl ? (
             <ExternalLink href={projeto.repoApiUrl}>
-              {conteudo.projetos.verApiNoGithub}
+              {conteudo.projetos.verApiNoRepo}{' '}
+              {plataformaRepo(projeto.repoApiUrl)}
             </ExternalLink>
           ) : null}
           {projeto.demoUrl ? (
