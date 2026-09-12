@@ -51,6 +51,9 @@ export const conteudo = {
     verDemo: 'Ver demo',
     verMais: 'Ver mais projetos',
     verMenos: 'Ver menos',
+    /** Composto com o título do projeto: "Ampliar imagem: <título>". */
+    ampliarImagem: 'Ampliar imagem',
+    fecharImagem: 'Fechar',
   },
 
   experiencia: {

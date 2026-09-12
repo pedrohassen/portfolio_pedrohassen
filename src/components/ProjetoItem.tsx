@@ -1,10 +1,14 @@
+import { useState } from 'react'
 import { conteudo } from '../content/pt-BR'
 import { plataformaRepo } from '../lib/plataformaRepo'
 import type { Projeto } from '../types'
 import { ExternalLink } from './ExternalLink'
+import { Lightbox } from './Lightbox'
 
 /** Uma linha da lista de projetos (seção Projetos). */
 export function ProjetoItem({ projeto }: { projeto: Projeto }) {
+  const [lightboxAberto, setLightboxAberto] = useState(false)
+
   const temLinks = Boolean(
     projeto.repoUrl || projeto.repoApiUrl || projeto.demoUrl,
   )
@@ -56,14 +60,30 @@ export function ProjetoItem({ projeto }: { projeto: Projeto }) {
         </div>
 
         {projeto.imagem ? (
-          <img
-            src={projeto.imagem}
-            alt={projeto.imagemAlt ?? ''}
-            loading="lazy"
-            className="aspect-video w-full shrink-0 border border-line object-cover md:w-64"
-          />
+          <button
+            type="button"
+            onClick={() => setLightboxAberto(true)}
+            aria-label={`${conteudo.projetos.ampliarImagem}: ${projeto.titulo}`}
+            className="group w-full shrink-0 md:w-64"
+          >
+            <img
+              src={projeto.imagem}
+              alt={projeto.imagemAlt ?? ''}
+              loading="lazy"
+              className="aspect-video w-full border border-line object-cover transition-opacity group-hover:opacity-90"
+            />
+          </button>
         ) : null}
       </div>
+
+      {lightboxAberto && projeto.imagem ? (
+        <Lightbox
+          src={projeto.imagem}
+          alt={projeto.imagemAlt ?? projeto.titulo}
+          fecharLabel={conteudo.projetos.fecharImagem}
+          onClose={() => setLightboxAberto(false)}
+        />
+      ) : null}
     </article>
   )
 }
