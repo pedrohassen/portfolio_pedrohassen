@@ -2,8 +2,6 @@ import type { Perfil } from '../types'
 
 export const perfil: Perfil = {
   nome: 'Pedro Hasse Niemczewski',
-  titulo: 'Desenvolvedor de Software',
-  local: 'Pelotas — RS',
   nascimento: '1987-02-24',
   email: 'pedro_hasse@yahoo.com.br',
   links: {
