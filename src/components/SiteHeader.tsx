@@ -1,17 +1,9 @@
 import { useEffect, useState } from 'react'
-import { conteudo } from '../content/pt-BR'
 import { perfil } from '../data/profile'
+import { useIdioma } from '../lib/IdiomaContext'
 import { Container } from './Container'
+import { IdiomaToggle } from './IdiomaToggle'
 import { ThemeToggle } from './ThemeToggle'
-
-const navItems = [
-  { href: '#sobre', label: conteudo.nav.sobre },
-  { href: '#habilidades', label: conteudo.nav.habilidades },
-  { href: '#projetos', label: conteudo.nav.projetos },
-  { href: '#experiencia', label: conteudo.nav.experiencia },
-  { href: '#curriculo', label: conteudo.nav.curriculo },
-  { href: '#contato', label: conteudo.nav.contato },
-]
 
 const linkClasse =
   'font-sans text-sm text-muted transition-colors hover:text-ink'
@@ -21,8 +13,18 @@ const linkClasse =
  * recolhível (`Menu` / `Fechar`). O toggle de tema fica sempre visível.
  */
 export function SiteHeader() {
+  const { conteudo } = useIdioma()
   const [aberto, setAberto] = useState(false)
   const fechar = () => setAberto(false)
+
+  const navItems = [
+    { href: '#sobre', label: conteudo.nav.sobre },
+    { href: '#habilidades', label: conteudo.nav.habilidades },
+    { href: '#projetos', label: conteudo.nav.projetos },
+    { href: '#experiencia', label: conteudo.nav.experiencia },
+    { href: '#curriculo', label: conteudo.nav.curriculo },
+    { href: '#contato', label: conteudo.nav.contato },
+  ]
 
   useEffect(() => {
     if (!aberto) return
@@ -62,6 +64,8 @@ export function SiteHeader() {
             {conteudo.contato.github}
           </a>
 
+          <IdiomaToggle />
+
           <ThemeToggle />
 
           <button
@@ -71,7 +75,7 @@ export function SiteHeader() {
             aria-controls="menu-mobile"
             className={`md:hidden ${linkClasse}`}
           >
-            {aberto ? 'Fechar' : 'Menu'}
+            {aberto ? conteudo.nav.fechar : conteudo.nav.menu}
           </button>
         </div>
       </Container>

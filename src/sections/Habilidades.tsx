@@ -1,18 +1,25 @@
+import { useMemo } from 'react'
 import { Section } from '../components/Section'
-import { conteudo } from '../content/pt-BR'
 import { habilidadesBase } from '../data/habilidades'
+import { useIdioma } from '../lib/IdiomaContext'
 import { juntarTextos } from '../lib/juntarTextos'
-
-const habilidades = juntarTextos(
-  habilidadesBase,
-  conteudo.habilidades.categorias,
-  (c) => c.id,
-)
 
 /** Seção "02 — Habilidades": stack em colunas de texto corrido, reaproveitando
  * o mesmo estilo de rótulo já usado na linha de stack dos projetos — sem
  * badge/ícone, só tipografia. */
 export function Habilidades() {
+  const { conteudo } = useIdioma()
+
+  const habilidades = useMemo(
+    () =>
+      juntarTextos(
+        habilidadesBase,
+        conteudo.habilidades.categorias,
+        (c) => c.id,
+      ),
+    [conteudo],
+  )
+
   return (
     <Section
       id="habilidades"
