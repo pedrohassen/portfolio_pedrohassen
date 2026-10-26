@@ -190,16 +190,16 @@ export const conteudo = {
         local: 'Pelotas, RS',
         atividades: [
           'Liderança do time de desenvolvimento e responsabilidade pelas entregas aos clientes.',
-          'Atuação como Product Owner: reuniões com clientes para entender as dores do negócio, levantamento de requisitos e priorização do backlog.',
+          'Atuação como Product Owner (PO): reuniões com clientes para entender as dores do negócio, levantamento de requisitos e priorização do backlog.',
         ],
       },
       dti: {
-        cargo: 'Desenvolvedor Fullstack (estágio)',
+        cargo: 'Desenvolvedor Full Stack (Estágio)',
         empresa: 'DTI Sistemas (dti digital)',
         local: 'Belo Horizonte, MG (remoto)',
         atividades: [
-          'Atuação no ciclo de desenvolvimento de software de ponta a ponta: detalhamento de requisitos, modelagem de processos e de software.',
-          'Construção e manutenção de sistemas corporativos escaláveis com o ecossistema C# e .NET Core.',
+          'Atuação em todo o ciclo de desenvolvimento (levantamento de requisitos, modelagem de processos e de software) em um sistema corporativo de cobrança e renegociação de dívidas usado por diversas instituições de ensino.',
+          'Manutenção e evolução do sistema com C# e .NET Core.',
         ],
       },
       'senatec-coordenador': {
@@ -207,7 +207,7 @@ export const conteudo = {
         empresa: 'Senatec Junior (empresa júnior)',
         local: 'Pelotas, RS',
         atividades: [
-          'Desenvolvimento fullstack (JavaScript/TypeScript) e modelagem de banco de dados.',
+          'Desenvolvimento Full Stack (JavaScript/TypeScript) e modelagem de banco de dados.',
           'Coordenação de projetos: prazos, distribuição de tarefas no time e acompanhamento das entregas.',
         ],
       },
@@ -216,7 +216,7 @@ export const conteudo = {
         empresa: 'Coffe‑e',
         local: 'Pelotas, RS',
         atividades: [
-          'Projeto nascido de um Startup Weekend, tocado junto de outros desenvolvedores.',
+          'Projeto nascido de um Startup Weekend, desenvolvido junto a outros desenvolvedores.',
           'Estruturação técnica e desenvolvimento da plataforma, da modelagem à validação de funcionalidades com usuários.',
         ],
       },
@@ -229,7 +229,7 @@ export const conteudo = {
         conclusao: 'Previsão Dez/2026',
       },
       trybe: {
-        curso: 'Tecnólogo em Fullstack Web Developer',
+        curso: 'Curso de Desenvolvimento Web Full Stack',
         instituicao: 'Trybe',
         conclusao: '2023',
       },
@@ -239,7 +239,7 @@ export const conteudo = {
         conclusao: '2015',
       },
       administracao: {
-        curso: 'Graduação em Administração de Empresas',
+        curso: 'Bacharelado em Administração de Empresas',
         instituicao: 'Anhanguera — Pelotas',
         conclusao: '2013',
       },
@@ -250,6 +250,10 @@ export const conteudo = {
     marcador: '05 — Currículo',
     titulo: 'Currículo',
     texto: 'Versão completa e atualizada em PDF.',
+    /** Caminho estático do PDF em `/public` (um por idioma). */
+    pdf: '/curriculo/Pedro-Hasse-Niemczewski-Curriculo.pdf',
+    /** Nome ao baixar (sem acento, evita bagunça em alguns SOs). */
+    nomeDownload: 'Pedro Hasse Niemczewski - Curriculo.pdf',
     ver: 'Ver PDF',
     baixar: 'Baixar PDF',
   },

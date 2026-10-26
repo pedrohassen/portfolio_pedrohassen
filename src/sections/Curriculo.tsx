@@ -1,6 +1,5 @@
 import { Button } from '../components/Button'
 import { Section } from '../components/Section'
-import { perfil } from '../data/profile'
 import { useIdioma } from '../lib/IdiomaContext'
 
 export function Curriculo() {
@@ -17,7 +16,7 @@ export function Curriculo() {
       </p>
       <div className="flex flex-wrap gap-3">
         <Button
-          href={perfil.curriculoPdf}
+          href={conteudo.curriculo.pdf}
           target="_blank"
           rel="noreferrer"
           variant="solid"
@@ -25,8 +24,8 @@ export function Curriculo() {
           {conteudo.curriculo.ver}
         </Button>
         <Button
-          href={perfil.curriculoPdf}
-          download={perfil.curriculoNomeDownload}
+          href={conteudo.curriculo.pdf}
+          download={conteudo.curriculo.nomeDownload}
         >
           {conteudo.curriculo.baixar}
         </Button>

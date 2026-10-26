@@ -8,10 +8,10 @@ export const habilidadesBase: CategoriaHabilidadeBase[] = [
   },
   {
     id: 'frameworks',
-    itens: ['Node.js', 'React', '.NET Core', 'Vuetify'],
+    itens: ['Node.js', 'React', 'Vue.js', '.NET Core', 'Vuetify'],
   },
   {
     id: 'dados',
-    itens: ['GenAI (LLMs)', 'MySQL', 'MongoDB', 'Git'],
+    itens: ['GenAI (LLMs)', 'MySQL', 'MongoDB', 'Git', 'Vite'],
   },
 ]
