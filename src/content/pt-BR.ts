@@ -10,8 +10,8 @@ const titulo = 'Desenvolvedor de Software'
 
 /**
  * Todo o texto visível da interface. Nada de string solta no JSX.
- * Para traduzir depois: criar `en.ts` com o mesmo formato + um seletor
- * (ver TAREFAS.md, backlog). Os marcadores numéricos das seções (`01 — …`)
+ * Este é o idioma de referência: o tipo `Conteudo` sai daqui e `en.ts` precisa
+ * ter exatamente o mesmo formato. Os marcadores numéricos das seções (`01 — …`)
  * também vivem aqui.
  */
 export const conteudo = {
@@ -28,13 +28,44 @@ export const conteudo = {
     experiencia: 'Experiência',
     curriculo: 'Currículo',
     contato: 'Contato',
+    menu: 'Menu',
+    fechar: 'Fechar',
+    pularParaConteudo: 'Pular para o conteúdo',
+    idioma: 'Idioma',
+  },
+
+  tema: {
+    ativarClaro: 'Ativar tema claro',
+    ativarEscuro: 'Ativar tema escuro',
+    claro: 'Claro',
+    escuro: 'Escuro',
+  },
+
+  /** Usado por `formatPeriodo`: `jan/2025 – abr/2026`, ou `jan/2025 – atual`. */
+  periodo: {
+    meses: [
+      'jan',
+      'fev',
+      'mar',
+      'abr',
+      'mai',
+      'jun',
+      'jul',
+      'ago',
+      'set',
+      'out',
+      'nov',
+      'dez',
+    ],
+    mesAnoSeparador: '/',
+    atual: 'atual',
   },
 
   hero: {
     marcador: '01 — Sobre',
-    /** A idade é montada no componente: `calculateAge(perfil.nascimento)` + esta unidade. */
     titulo,
     local: 'Pelotas — RS',
+    /** A idade é montada no componente: `calculateAge(perfil.nascimento)` + esta unidade. */
     idadeUnidade: 'anos',
     disponivel: 'Aberto a oportunidades',
     /** Cada item é um parágrafo. */
@@ -237,4 +268,7 @@ export const conteudo = {
     direitos: perfil.nome,
     codigo: 'Código no GitHub',
   },
-} as const
+}
+
+/** Formato que todo idioma precisa seguir. */
+export type Conteudo = typeof conteudo
