@@ -167,39 +167,39 @@ export const conteudoEn: Conteudo = {
     formacaoTitulo: 'Education',
     itens: {
       'senatec-diretor': {
-        cargo: 'Technology Director',
-        empresa: 'Senatec Junior (junior enterprise)',
+        cargo: 'Director of Technology',
+        empresa: 'Senatec Junior (Junior Enterprise)',
         local: 'Pelotas, RS, Brazil',
         atividades: [
-          'Led the development team and was accountable for deliveries to clients.',
-          'Acted as Product Owner: client meetings to understand business pain points, requirements gathering and backlog prioritization.',
+          'Led the development team and took responsibility for delivering client projects.',
+          'Acted as Product Owner (PO): conducted client meetings to understand business pain points, gathered requirements, and prioritized the backlog.',
         ],
       },
       dti: {
-        cargo: 'Fullstack Developer (intern)',
+        cargo: 'Full Stack Developer (Intern)',
         empresa: 'DTI Sistemas (dti digital)',
         local: 'Belo Horizonte, MG, Brazil (remote)',
         atividades: [
-          'Worked across the end-to-end software development cycle: requirements detailing, process and software modeling.',
-          'Built and maintained scalable enterprise systems with the C# and .NET Core ecosystem.',
+          'Worked across the end-to-end software development life cycle (requirements gathering, process modeling and software modeling) on a corporate debt collection and renegotiation system used by multiple educational institutions.',
+          'Maintained and evolved the system with C# and .NET Core.',
         ],
       },
       'senatec-coordenador': {
-        cargo: 'Developer and Project Coordinator',
-        empresa: 'Senatec Junior (junior enterprise)',
+        cargo: 'Developer & Project Coordinator',
+        empresa: 'Senatec Junior (Junior Enterprise)',
         local: 'Pelotas, RS, Brazil',
         atividades: [
-          'Fullstack development (JavaScript/TypeScript) and database modeling.',
-          'Project coordination: deadlines, task distribution across the team and delivery follow-up.',
+          'Full Stack development (JavaScript/TypeScript) and database modeling.',
+          'Project coordination: managed deadlines, distributed tasks among the team, and tracked deliverables.',
         ],
       },
       coffee: {
-        cargo: 'Co-founder and Developer',
+        cargo: 'Co-Founder & Developer',
         empresa: 'Coffe‑e',
         local: 'Pelotas, RS, Brazil',
         atividades: [
-          'Project born at a Startup Weekend, built together with other developers.',
-          'Technical structuring and development of the platform, from modeling to validating features with users.',
+          'A project born from a Startup Weekend, developed alongside other developers.',
+          'Responsible for the technical structuring and platform development, from data modeling to validating features with users.',
         ],
       },
     },
@@ -210,17 +210,18 @@ export const conteudoEn: Conteudo = {
         conclusao: 'Expected Dec 2026',
       },
       trybe: {
-        curso: 'Technologist in Fullstack Web Development',
+        curso: 'Full Stack Web Developer Program',
         instituicao: 'Trybe',
         conclusao: '2023',
       },
       'pos-gestao': {
-        curso: 'Postgraduate degree in Business Management',
+        curso:
+          'Postgraduate Specialization (Lato Sensu) in Business Management',
         instituicao: 'UniSENAC — Pelotas, RS, Brazil',
         conclusao: '2015',
       },
       administracao: {
-        curso: "Bachelor's degree in Business Administration",
+        curso: "Bachelor's Degree in Business Administration",
         instituicao: 'Anhanguera — Pelotas, RS, Brazil',
         conclusao: '2013',
       },
@@ -230,7 +231,9 @@ export const conteudoEn: Conteudo = {
   curriculo: {
     marcador: '05 — Resume',
     titulo: 'Resume',
-    texto: 'Full, up-to-date version as a PDF (in Portuguese).',
+    texto: 'Full, up-to-date version as a PDF.',
+    pdf: '/curriculo/Pedro-Hasse-Niemczewski-Resume.pdf',
+    nomeDownload: 'Pedro Hasse Niemczewski - Resume.pdf',
     ver: 'View PDF',
     baixar: 'Download PDF',
   },

@@ -9,7 +9,7 @@ function rotuloMesAno(mesAno: string, { meses, mesAnoSeparador }: Periodo) {
 }
 
 /**
- * `"2025-01", "2026-04"` → `"jan/2025 – abr/2026"`.
+ * `"2025-01", "2026-03"` → `"jan/2025 – mar/2026"`.
  * `fim` nulo (cargo atual) → `"jan/2025 – atual"`.
  */
 export function formatPeriodo(
