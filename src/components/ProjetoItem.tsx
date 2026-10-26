@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { conteudo } from '../content/pt-BR'
+import { useIdioma } from '../lib/IdiomaContext'
 import { plataformaRepo } from '../lib/plataformaRepo'
 import type { Projeto } from '../types'
 import { ExternalLink } from './ExternalLink'
@@ -7,6 +7,7 @@ import { Lightbox } from './Lightbox'
 
 /** Uma linha da lista de projetos (seção Projetos). */
 export function ProjetoItem({ projeto }: { projeto: Projeto }) {
+  const { conteudo } = useIdioma()
   const [lightboxAberto, setLightboxAberto] = useState(false)
 
   const temLinks = Boolean(

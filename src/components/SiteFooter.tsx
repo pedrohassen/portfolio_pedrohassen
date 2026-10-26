@@ -1,8 +1,9 @@
-import { conteudo } from '../content/pt-BR'
 import { perfil } from '../data/profile'
+import { useIdioma } from '../lib/IdiomaContext'
 import { Container } from './Container'
 
 export function SiteFooter() {
+  const { conteudo } = useIdioma()
   const ano = new Date().getFullYear()
 
   return (

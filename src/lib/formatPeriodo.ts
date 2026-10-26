@@ -1,28 +1,22 @@
-const MESES = [
-  'jan',
-  'fev',
-  'mar',
-  'abr',
-  'mai',
-  'jun',
-  'jul',
-  'ago',
-  'set',
-  'out',
-  'nov',
-  'dez',
-]
+import type { Conteudo } from '../content/pt-BR'
 
-/** `"2025-01"` → `"jan/2025"` */
-function rotuloMesAno(mesAno: string): string {
+type Periodo = Conteudo['periodo']
+
+/** `"2025-01"` → `"jan/2025"` (pt-BR) ou `"Jan 2025"` (en). */
+function rotuloMesAno(mesAno: string, { meses, mesAnoSeparador }: Periodo) {
   const [ano, mes] = mesAno.split('-')
-  return `${MESES[Number(mes) - 1]}/${ano}`
+  return `${meses[Number(mes) - 1]}${mesAnoSeparador}${ano}`
 }
 
 /**
  * `"2025-01", "2026-04"` → `"jan/2025 – abr/2026"`.
  * `fim` nulo (cargo atual) → `"jan/2025 – atual"`.
  */
-export function formatPeriodo(inicio: string, fim: string | null): string {
-  return `${rotuloMesAno(inicio)} – ${fim ? rotuloMesAno(fim) : 'atual'}`
+export function formatPeriodo(
+  inicio: string,
+  fim: string | null,
+  periodo: Periodo,
+): string {
+  const fimRotulo = fim ? rotuloMesAno(fim, periodo) : periodo.atual
+  return `${rotuloMesAno(inicio, periodo)} – ${fimRotulo}`
 }

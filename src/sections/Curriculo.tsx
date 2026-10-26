@@ -1,9 +1,11 @@
 import { Button } from '../components/Button'
 import { Section } from '../components/Section'
-import { conteudo } from '../content/pt-BR'
 import { perfil } from '../data/profile'
+import { useIdioma } from '../lib/IdiomaContext'
 
 export function Curriculo() {
+  const { conteudo } = useIdioma()
+
   return (
     <Section
       id="curriculo"

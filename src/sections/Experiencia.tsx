@@ -1,21 +1,24 @@
 import { Section } from '../components/Section'
-import { conteudo } from '../content/pt-BR'
+import { useMemo } from 'react'
 import { experienciaBase, formacaoBase } from '../data/experience'
 import { formatPeriodo } from '../lib/formatPeriodo'
+import { useIdioma } from '../lib/IdiomaContext'
 import { juntarTextos } from '../lib/juntarTextos'
 
-const experiencia = juntarTextos(
-  experienciaBase,
-  conteudo.experiencia.itens,
-  (e) => e.id,
-)
-const formacao = juntarTextos(
-  formacaoBase,
-  conteudo.experiencia.formacao,
-  (f) => f.id,
-)
-
 export function Experiencia() {
+  const { conteudo } = useIdioma()
+
+  const experiencia = useMemo(
+    () =>
+      juntarTextos(experienciaBase, conteudo.experiencia.itens, (e) => e.id),
+    [conteudo],
+  )
+  const formacao = useMemo(
+    () =>
+      juntarTextos(formacaoBase, conteudo.experiencia.formacao, (f) => f.id),
+    [conteudo],
+  )
+
   return (
     <Section
       id="experiencia"
@@ -28,7 +31,7 @@ export function Experiencia() {
             <div className="flex flex-wrap items-baseline justify-between gap-x-4">
               <h3 className="text-lg">{item.cargo}</h3>
               <span className="font-sans text-sm text-muted">
-                {formatPeriodo(item.inicio, item.fim)}
+                {formatPeriodo(item.inicio, item.fim, conteudo.periodo)}
               </span>
             </div>
             <p className="font-sans text-sm text-muted">

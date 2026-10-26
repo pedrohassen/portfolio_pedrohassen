@@ -1,12 +1,14 @@
 import { ExternalLink } from '../components/ExternalLink'
 import { Section } from '../components/Section'
-import { conteudo } from '../content/pt-BR'
 import { perfil } from '../data/profile'
+import { useIdioma } from '../lib/IdiomaContext'
 
 const linkClasse =
   'underline decoration-line underline-offset-4 transition-colors hover:text-accent hover:decoration-accent'
 
 export function Contato() {
+  const { conteudo } = useIdioma()
+
   return (
     <Section
       id="contato"
