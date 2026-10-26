@@ -9,6 +9,4 @@ export const perfil: Perfil = {
     linkedin: 'https://www.linkedin.com/in/pedrohassen',
     repositorio: 'https://github.com/pedrohassen/portfolio_pedrohassen',
   },
-  curriculoPdf: '/curriculo/Pedro-Hasse-Niemczewski-Curriculo.pdf',
-  curriculoNomeDownload: 'Pedro Hasse Niemczewski - Curriculo.pdf',
 }

@@ -13,10 +13,6 @@ export type Perfil = {
   nascimento: string
   email: string
   links: LinksExternos
-  /** Caminho estático do PDF em `/public`. */
-  curriculoPdf: string
-  /** Nome do arquivo ao baixar o PDF (sem acento, evita bagunça em alguns SOs). */
-  curriculoNomeDownload: string
 }
 
 /*
