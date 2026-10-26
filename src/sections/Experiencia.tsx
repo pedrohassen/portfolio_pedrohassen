@@ -1,7 +1,19 @@
 import { Section } from '../components/Section'
 import { conteudo } from '../content/pt-BR'
-import { experiencia, formacao } from '../data/experience'
+import { experienciaBase, formacaoBase } from '../data/experience'
 import { formatPeriodo } from '../lib/formatPeriodo'
+import { juntarTextos } from '../lib/juntarTextos'
+
+const experiencia = juntarTextos(
+  experienciaBase,
+  conteudo.experiencia.itens,
+  (e) => e.id,
+)
+const formacao = juntarTextos(
+  formacaoBase,
+  conteudo.experiencia.formacao,
+  (f) => f.id,
+)
 
 export function Experiencia() {
   return (
@@ -12,7 +24,7 @@ export function Experiencia() {
     >
       <ol className="space-y-10">
         {experiencia.map((item) => (
-          <li key={`${item.empresa}-${item.inicio}`}>
+          <li key={item.id}>
             <div className="flex flex-wrap items-baseline justify-between gap-x-4">
               <h3 className="text-lg">{item.cargo}</h3>
               <span className="font-sans text-sm text-muted">
@@ -37,7 +49,7 @@ export function Experiencia() {
       <ul className="space-y-4">
         {formacao.map((item) => (
           <li
-            key={item.curso}
+            key={item.id}
             className="flex flex-wrap items-baseline justify-between gap-x-4"
           >
             <span>

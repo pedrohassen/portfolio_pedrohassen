@@ -1,16 +1,17 @@
-import type { CategoriaHabilidade } from '../types'
+import type { CategoriaHabilidadeBase } from '../types'
 
-export const habilidades: CategoriaHabilidade[] = [
+/** Os nomes das categorias vivem em `src/content/`. */
+export const habilidadesBase: CategoriaHabilidadeBase[] = [
   {
-    categoria: 'Linguagens',
+    id: 'linguagens',
     itens: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'C#', 'Python'],
   },
   {
-    categoria: 'Frameworks & bibliotecas',
+    id: 'frameworks',
     itens: ['Node.js', 'React', '.NET Core', 'Vuetify'],
   },
   {
-    categoria: 'Dados & ferramentas',
+    id: 'dados',
     itens: ['GenAI (LLMs)', 'MySQL', 'MongoDB', 'Git'],
   },
 ]

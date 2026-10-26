@@ -2,7 +2,14 @@ import { useState } from 'react'
 import { ProjetoItem } from '../components/ProjetoItem'
 import { Section } from '../components/Section'
 import { conteudo } from '../content/pt-BR'
-import { projetos } from '../data/projects'
+import { projetosBase } from '../data/projects'
+import { juntarTextos } from '../lib/juntarTextos'
+
+const projetos = juntarTextos(
+  projetosBase,
+  conteudo.projetos.itens,
+  (p) => p.slug,
+)
 
 /** Quantos não-destaque aparecem além dos destaques, antes do "ver mais". */
 const NAO_DESTAQUE_VISIVEIS = 0

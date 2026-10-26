@@ -14,7 +14,7 @@ export function Hero() {
           {perfil.nome}
         </h1>
         <p className="mt-6 font-sans text-base text-muted sm:text-lg">
-          {perfil.titulo} · {perfil.local} · {idade}{' '}
+          {conteudo.hero.titulo} · {conteudo.hero.local} · {idade}{' '}
           {conteudo.hero.idadeUnidade} · {conteudo.hero.disponivel}
         </p>
       </Container>

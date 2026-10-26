@@ -1,6 +1,13 @@
 import { Section } from '../components/Section'
 import { conteudo } from '../content/pt-BR'
-import { habilidades } from '../data/habilidades'
+import { habilidadesBase } from '../data/habilidades'
+import { juntarTextos } from '../lib/juntarTextos'
+
+const habilidades = juntarTextos(
+  habilidadesBase,
+  conteudo.habilidades.categorias,
+  (c) => c.id,
+)
 
 /** Seção "02 — Habilidades": stack em colunas de texto corrido, reaproveitando
  * o mesmo estilo de rótulo já usado na linha de stack dos projetos — sem
@@ -14,7 +21,7 @@ export function Habilidades() {
     >
       <div className="grid gap-x-8 gap-y-8 sm:grid-cols-3">
         {habilidades.map((grupo) => (
-          <div key={grupo.categoria}>
+          <div key={grupo.id}>
             <h3 className="mb-2 font-sans text-xs tracking-wide text-muted uppercase">
               {grupo.categoria}
             </h3>
